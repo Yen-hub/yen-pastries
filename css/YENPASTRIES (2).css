@@ -1,0 +1,292 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.navigation-bar nav{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar nav div a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-bar nav div .active, .navigation-bar nav div a:hover{
+    color: coral;
+}
+
+.navigation-bar nav div{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.get-started, .slider button{
+    background-color: coral;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.slider{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.6)),url(../images/yen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    flex-wrap: wrap;
+}
+
+.slogan{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.slider button{
+    padding: 5px 10px;
+}
+
+.section-1{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-1-left{
+    flex: 1;
+    margin-right: 30px;
+}
+
+.section-1-right{
+    flex: 1;
+    margin-left: 30px;
+}
+
+.section-1-right div{
+    display: flex;
+    align-items: center;
+}
+
+.section-1-left{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.partners{
+    display: flex;
+    align-items: center;
+    padding: auto;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+
+.about-item{
+    width: 80%;
+    margin:  20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-item-list {
+    display: flex;
+    width: 45%;
+    margin: 10px;
+    background-color:rgba(196, 196, 196, 0.1);
+    padding: 1%;
+    align-items: center;
+    grid-template-rows: 2 2;
+}
+
+.about-item-list .icon{
+    margin-right: 6px;
+    font-size: 30px;
+}
+
+.about-item-list .title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-item-list .description{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.gallery{
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem ,1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-image{
+    border-radius: 10px;
+    width: 100%
+    
+}
+.gallery-image img{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+footer{
+    margin-top: 40px;
+    color: white;
+}
+
+.footer-container{
+    background-color: rgb(64, 72, 95);
+    display: flex; 
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+.footer-element-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-elememt{
+    color: lightgrey;
+    margin: 4px 10px;
+
+}
+
+.copywrite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(60, 66, 83);
+}
+
+.copywrite-copywrite{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.copywrite-designer{
+    font-size: 15px;
+    color: lightgrey;
+}
+
+.footer-address{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-contact{
+    margin-bottom: 10px;
+}
+
+.footer-contact span{
+    font-weight: 600;
+}
+
+.footer-social-networks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social-network{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.452);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-network img{
+    width: 30px;
+    height: 30px;
+}
+
+.newsletter-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+#email{
+    width: 80%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.newsletter-submit{
+    height: 25px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media(max-width: 900px){
+    .section-1{
+        
+        flex-direction: column;
+    }
+
+    .about-item-list{
+        width: 90%;
+    }
+    .card-container-card{
+     flex-direction: column;
+
+}
+
+
+    .gallery{
+        flex-wrap: wrap;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-social-networks{
+        justify-content: flex-start;
+    }
+    .footer-social-network{
+        margin-left: 10px;
+    }
+
+    .footer-element-title{
+        margin-top: 20px;
+    }
+}
